@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
+
+body {
+  text-align: center;
+  background-color: #0d0d0d;
+  color: #f5f5f5;
+font-family: 'Gloock', cursive;}
+
+h1 {
+  color: #ff7518;
+  text-shadow: 0 0 10px red;
+}
+
+#game-area {
+  /* talk about viewport width (vw) and height (vh),
+  position relative/absolute*/
+  width: 80vw; 
+  height: 60vh;
+  margin: 20px auto;
+  position: relative;
+  background: radial-gradient(#545353, #000);
+  overflow: hidden; /* hides any ghosts outside the game area */
+  border: 3px solid #ff7518;
+  border-radius: 15px;
+}
+
+.ghost {
+  position: absolute;
+  width: 150px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.ghost:hover {
+  transform: scale(1.2);
+}
